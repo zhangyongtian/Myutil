@@ -1,0 +1,12 @@
+@CrossOrigin
+    @RequestMapping("/fileUpload")
+    public String fileUpload(@RequestParam("file") MultipartFile multipartFile){
+        String url= null;
+        try {
+            url = fastDFSClient.uploadFile(multipartFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return serverImagePrefix+url;
+    }
