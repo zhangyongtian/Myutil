@@ -1,0 +1,41 @@
+.my-padding-tb{
+	padding-top: 30px !important ;
+	padding-bottom: 30px !important;
+}
+.my-sidebar{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.my-shadow{
+	-webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+.my-sidebar{
+		display: none !important;
+}
+@media screen and (max-width: 768px) {
+	.my-media-hide {
+		display: none !important;
+	}
+	.my-sidebar{
+		display: block !important;
+	}
+	.my-phone{
+		width: 100% !important;
+		margin-top: 6px !important;
+	}
+	.my-phone-button{
+		width: 100%!important;
+		display: inline-block;
+		margin-top: 5px !important;
+	}
+}
+.my-container-m-top{
+	margin-top: 30px !important;
+	margin-bottom: 60px !important;
+}
+.my-shadow{
+	-webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}

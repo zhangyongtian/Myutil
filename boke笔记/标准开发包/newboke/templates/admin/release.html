@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../../static/css/semantic.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/css/mycss/mycss.css"/>
+		<title>小博首页</title>
+	</head>
+	<body>
+		<nav class="my-shadow">
+			<div class="ui inverted segment attached">
+				<div class="ui container ">
+					<div class="ui menu inverted stackable">
+						<div class="ui item">
+							<div class="ui header teal">
+								开始吧
+							</div>
+						</div>
+							<a class="ui item my-media-hide  my-menu-item">
+								<div class="ui icon text">
+									<div class="ui text">
+										<i class="home icon"></i>首页
+									</div>
+								</div>
+							</a>
+							<a class="ui item   my-menu-item  my-media-hide">
+								<div class="ui icon text">
+										<i class="idea icon"></i>分类
+								</div>
+							</a>
+							<a class="ui item my-media-hide  my-menu-item" href="../">
+								<div class="ui icon text">
+									<i class="tags icon"></i>标签
+								</div>
+							</a>
+							<a class="ui item my-media-hide  my-menu-item" href="../">
+								<div class="ui icon text">
+									<i class="paste icon"></i>归档
+								</div>
+							</a>
+							<a class="ui item my-media-hide  my-menu-item" href="">
+								<div class="ui icon text">
+									<i class="user secret icon"></i>关于我
+								</div>
+							</a>
+							<a class="right item my-media-hide my-menu-item" href="">
+								<div class="ui input icon">
+									<input type="text" placeholder="搜索">
+									<i class="search icon"></i>
+								</div>
+							</a>
+							
+							<div class="item my-media-hide my-menu-item">
+								<div class="ui inline dropdown">
+									<div class="text">
+										<img src="https://unsplash.it/800/800?image=1005"  class="ui image rounded">
+										张永田
+										<i class="dropdown icon"></i>
+									</div>
+									<div class="menu fluid">
+										<div class="item ">
+											注销
+										</div>
+									</div>
+								</div>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="ui black icon button my-sidebar">
+				<i class="sidebar icon"></i>
+			</div>
+		</nav>
+		<div class="ui attached pointing menu">
+			<div class="ui container">
+				<div class="right menu">
+					<a href="" class="active item teal">发布</a>
+					<a href="" class="item ">列表</a>
+				</div>
+			</div>
+		</div>
+		<div class="ui container" style="margin-top: 50px;">
+			<form action="" method="" class="ui form">
+				<div class="field">
+					<div class="ui left action input fluid">
+						<div class="ui left dropdown button teal">
+							<div class="text">
+								原创
+							</div>
+							<i class="dropdown icon"></i>
+							<div class="menu">
+								<div class="item">This Organization</div>
+								<div class="item">Entire Site</div>
+							</div>
+						</div>
+						<input type="" name="title" id="" value="" placeholder="标题"/>
+					</div>
+				</div>
+				<div class="field">
+					<textarea rows="20px" cols="" placeholder="博客内容"></textarea>
+				</div>
+				
+				<div class="two fields">
+					<div class="field">
+						<div class="column">
+									<div class="ui left labeled input ">
+											<div class="ui label teal">
+												分类
+											</div>
+											<div class="ui selection dropdown fluid">
+												<input type="hidden" name="" id="" value="" />
+												<div class="default text">
+													分类
+												</div>
+												<i class="dropdown icon"></i>
+												<div class="menu">
+													<div class="item">
+														错误日志
+													</div>
+													<div class="item">
+														开发者首测
+													</div>
+												</div>
+											</div>
+										</div>
+									
+								</div>
+						
+					</div>
+					<div class="field">
+						<div class="ui labeled input">
+							<div class="ui label teal">
+								标签
+							</div>
+							<select name="skills" multiple="" class="ui fluid dropdown">
+								<option value="">Skills</option>
+								<option value="angular">Angular</option>
+								<option value="css">CSS</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<div class="ui labeled input">
+						<div class="ui label teal">
+							首图地址
+						</div>
+						<input type="text" name="" id="" value="" placeholder="http://" />
+					</div>
+				</div>
+				<div class="field">
+					<div class="field">
+						<div class="ui checkbox">
+							<input type="checkbox" tabindex="0" class="hidden">
+							<label>推荐</label>
+						</div>
+						<div class="ui checkbox">
+							<input type="checkbox" name="" id="" value="" />
+							<label>转载申明</label>
+						</div>
+						<div class="ui checkbox">
+							<input type="checkbox" name="" id="" value="" />
+							<label>赞赏</label>
+						</div>
+						<div class="ui checkbox">
+							<input type="checkbox" name="" id="" value="" />
+							<label>评论</label>
+						</div>
+					</div>
+				</div>
+				<div class="ui error message">
+					
+				</div>
+				<div class="ui segment basic right aligned">
+					<button type="button" class="ui button" onclick="windows.history.go(-1)">返回</button>
+					<button type="button" class="ui button black" >保存</button>
+					<button type="button" class="ui button teal submit" onclick="tijiao()">发布</button>
+				</div>
+			</form>
+		</div>
+		<footer>
+			<div class="ui segment attached inverted">
+				<div class="ui center aligned  container ">
+					<div class="ui inverted divided grid  my-padding-tb stackable ">
+						<div class="three wide column">
+							<a href="">
+								<img  src="../../static/images/weixin.jpg" style="width: 100px; height: 100px;margin: auto;" class="ui rounded image">
+							</a>
+							
+						</div>
+						<div class="three wide column">
+							<div class="ui header inverted">
+								最新发布
+							</div>
+							<div class="ui link list inverted divided aligned center">
+								<div href="" class="item">用户故事</div>
+								<div href="" class="item">关于刻苦练习的清单</div>
+								<div href="" class="item">失败要趁早</div>
+							</div>
+						</div>
+						<div class="three wide column">
+							<div class="ui header inverted">
+								联系我
+							</div>
+							<div class="ui link list inverted divided">
+								<a href="" class="item">EmaIl:fhdshjf.com</a>
+								<a href="" class="item">qq:7878797979</a>
+							</div>
+						</div>
+						<div class="seven wide column">
+							<div class="ui header inverted">zhang</div>
+							<div class="ui link list inverted">
+								<a href="" class="item">
+									一个总是轻易放弃的人
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ui section divider inverted center aligned" style="text-align: center;line-height: 40px;">
+					fsdafdsafj
+				</div>
+				
+			</div>
+			
+		</footer>
+	</body>
+	<script src="../../static/js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../static/js/semantic.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../static/js/prism.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$('.my-sidebar').click(function(){
+			$('.my-menu-item').toggleClass("my-media-hide");
+		})
+		$('.ui.dropdown').dropdown();
+		function tijiao(){
+			console.log("fjdkjfk")
+			$('.ui.form')
+				.form({
+					fields: {
+					title: {
+					identifier: 'title',
+					rules: [
+							{
+								type   : 'empty',
+								prompt : 'Please enter your name'
+							}
+							]
+						},
+					}
+			});
+		}
+	</script>
+</html>
